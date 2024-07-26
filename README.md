@@ -294,6 +294,11 @@ DojoConnectは、[MITライセンス](LICENSE.md)のもとで公開されてい�
 
 ⭐️ DojoConnectのビジョンに共感いただけましたら、GitHubリポジトリにスターを付けてサポートをお願いします！共に、武道の未来を創造しましょう。
 
+## 🚀 OpenDevinの起動コマンド
+
+以下のコマンドを使用してOpenDevinを起動します：
+
+```bash
 WORKSPACE_BASE=$(pwd)/workspace/dojoconnect
 docker run -it \
     --pull=always \
@@ -305,6 +310,7 @@ docker run -it \
     --add-host host.docker.internal:host-gateway \
     --name opendevin-app-$(date +%Y%m%d%H%M%S) \
     ghcr.io/opendevin/opendevin
+```
 
 ## 🧪 テストの実行方法
 
