@@ -1,44 +1,41 @@
-# DojoConnect開発指示
+# DojoConnect Development Instructions
+## Project Overview
+Platform for martial arts dojo management and community
 
-## プロジェクト概要
-DojoConnectは、武道道場の運営を革新し、武道家のコミュニティをグローバルに繋ぐ次世代のプラットフォームです。
+## Tech Stack
+Next.js 14, Firebase, NextAuth.js, Tailwind CSS
 
-## 技術スタック
-- フロントエンド: Next.js 14
-- バックエンド: Firebase
-- 認証: NextAuth.js
-- スタイリング: Tailwind CSS
+## Development Guidelines
+1. Ensure type safety with TypeScript
+2. Design reusable components
+3. Focus on accessibility
+4. Optimize performance
+5. Prioritize security
 
-## 開発ガイドライン
-1. コードは常にTypeScriptで記述し、型安全性を確保すること。
-2. コンポーネントは可能な限り再利用可能な形で設計すること。
-3. アクセシビリティに配慮し、WAI-ARIAガイドラインに従うこと。
-4. パフォーマンスを最適化し、Lighthouse scoreで90以上を目指すこと。
-5. セキュリティベストプラクティスに従い、特に認証と認可に注意を払うこと。
+## Feature Priority
+1. User authentication
+2. Dojo profile management
+3. Booking system
+4. Training records
+5. Event management
+6. Ranking system
 
-## 機能開発の優先順位
-1. ユーザー認証システム
-2. 道場プロフィール作成と管理
-3. スケジュール管理と予約システム
-4. トレーニング記録と分析
-5. イベント管理
-6. ランキングシステム
+## Testing Requirements
+Implement unit, integration, and E2E tests
 
-## テスト要件
-- 各コンポーネントに対するユニットテストを書くこと。
-- 重要な機能に対する統合テストを実装すること。
-- E2Eテストでユーザーフローを確認すること。
+## Deployment
+Continuous deployment with Vercel
 
-## デプロイメント
-- Vercelを使用して継続的デプロイメントを設定すること。
-- 本番環境、ステージング環境、開発環境を適切に分けること。
+## Documentation
+Update with new features, use JSDoc comments
 
-## ドキュメンテーション
-- 新しい機能やAPIを追加する際は、必ずドキュメントを更新すること。
-- コードにはJSDocスタイルのコメントを適切に付けること。
+## Code Quality
+Use ESLint/Prettier, PR reviews mandatory
 
-## コード品質
-- ESLintとPrettierを使用してコードの一貫性を保つこと。
-- Pull Requestにはコードレビューを必須とし、最低1人の承認を得ること。
+## Language
+Japanese is the primary language for this project. OpenDevin should respond in Japanese.
 
-これらのガイドラインに従いながら、DojoConnectの開発を進めてください。ユーザー体験を最優先に考え、武道家のニーズに応える革新的な機能を実装することを目指します。
+## File Structure
+Always refer to the file structure in README.md
+
+No need to start servers. Focus on writing code. Ask if you have questions.
