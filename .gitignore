@@ -1,3 +1,34 @@
-/.env.local
-/.env.production
-node_modules
+# ビルド出力
+/build
+/dist
+/.next
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# ログ
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# キャッシュ
+.cache/
+.npm/
+
+# その他
+*.tgz
+.yarn-integrity
+EOF
