@@ -1,14 +1,31 @@
+'use client';
 
-import React from 'react';
-import Layout from './layout';
+import Auth0ProviderWithHistory from './auth0-config';
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
+import Profile from './components/Profile';
 
-const HomePage: React.FC = () => {
+import { Providers } from './providers';
+import HomePage from '../components/HomePage';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+export default function Page() {
   return (
-    <Layout>
-      <h2>Welcome to DojoConnect</h2>
-      <p>Your ultimate platform for managing and connecting martial arts dojos worldwide.</p>
-    </Layout>
-  );
-};
 
-export default HomePage;
+<Auth0ProviderWithHistory>
+  <Providers>
+    <Header />
+    <main className="flex-grow container mx-auto px-4 py-8">
+      <div className="flex justify-between items-center mb-4">
+        <LoginButton />
+        <LogoutButton />
+      </div>
+      <Profile />
+      <HomePage />
+    </main>
+    <Footer />
+  </Providers>
+</Auth0ProviderWithHistory>
+  );
+}

@@ -1,41 +1,201 @@
-# DojoConnect Development Instructions
-## Project Overview
-Platform for martial arts dojo management and community
+# DojoConnect 開発指示
 
-## Tech Stack
+## プロジェクト概要
+
+武道道場の管理とコミュニティのためのプラットフォーム
+
+## 技術スタック
+
 Next.js 14, Firebase, NextAuth.js, Tailwind CSS
 
-## Development Guidelines
-1. Ensure type safety with TypeScript
-2. Design reusable components
-3. Focus on accessibility
-4. Optimize performance
-5. Prioritize security
+## 開発ガイドライン
 
-## Feature Priority
-1. User authentication
-2. Dojo profile management
-3. Booking system
-4. Training records
-5. Event management
-6. Ranking system
+1. TypeScriptで型安全性を確保する
+2. 再利用可能なコンポーネントを設計する
+3. アクセシビリティに焦点を当てる
+4. パフォーマンスを最適化する
+5. セキュリティを優先する
 
-## Testing Requirements
-Implement unit, integration, and E2E tests
+## 機能の優先順位
 
-## Deployment
-Continuous deployment with Vercel
+1. ユーザー認証
+2. 道場プロフィール管理
+3. 予約システム
+4. トレーニング記録
+5. イベント管理
+6. ランキングシステム
 
-## Documentation
-Update with new features, use JSDoc comments
+## テスト要件
 
-## Code Quality
-Use ESLint/Prettier, PR reviews mandatory
+ユニットテスト、統合テスト、E2Eテストを実装する
 
-## Language
-Japanese is the primary language for this project. OpenDevin should respond in Japanese.
+## デプロイメント
 
-## File Structure
-Always refer to the file structure in README.md
+Vercelを使用した継続的デプロイメント
 
-No need to start servers. Focus on writing code. Ask if you have questions.
+## ドキュメンテーション
+
+新機能で更新し、JSDocコメントを使用する
+
+## コード品質
+
+ESLint/Prettierを使用し、PRレビューは必須
+
+## 言語
+
+このプロジェクトの主要言語は日本語です。OpenDevinは日本語で応答してください。
+
+## ファイル構造
+
+常にREADME.mdのファイル構造を参照してください。すでにファイルがあればアップデートしなければ新規作成してください。
+
+サーバーを起動する必要はありません。コードの作成に集中してください。質問がある場合は尋ねてください。
+
+## インストールと環境設定
+
+開発環境のセットアップやパッケージのインストールは不要です。コードの作成に集中してください。
+
+# OpenDevin用開発指示と要件定義
+
+## プロジェクト概要
+
+DojoConnectは、武道道場の管理とコミュニティのためのプラットフォームです。このプロジェクトは、道場の運営、トレーニングの管理、イベントの企画、コミュニティの交流を支援するための多機能なアプリケーションを提供します。
+
+## 開発指示
+
+### 1. 環境設定
+
+- Node.jsとnpmをインストールしてください。
+- プロジェクトの依存関係をインストールするために、以下のコマンドを実行してください:
+  ```bash
+  npm install
+  ```
+
+### 2. 開発サーバーの起動
+
+- 開発サーバーを起動するには、以下のコマンドを実行してください:
+  ```bash
+  npm run dev
+  ```
+
+### 3. コードスタイル
+
+- コードはESLintとPrettierを使用してフォーマットしてください。
+- コードの品質を保つために、コミット前に以下のコマンドを実行してLintチェックを行ってください:
+  ```bash
+  npm run lint
+  ```
+
+### 4. テスト
+
+- ユニットテスト、統合テスト、E2Eテストを含むテストスイートを実行するには、以下のコマンドを使用してください:
+  ```bash
+  npm test
+  ```
+
+### 5. デプロイ
+
+- 本番環境へのデプロイ手順は、`scripts/deploy.sh`に記載されています。デプロイを実行する前に、必ずテストがすべて成功していることを確認してください。
+
+## 要件定義
+
+### 機能一覧
+
+1. **ユーザー認証**
+
+   - ログイン、登録、パスワードリセット機能を提供します。
+
+2. **ダッシュボード**
+
+   - ユーザーの活動状況や統計情報を表示します。
+
+3. **道場管理**
+
+   - 道場の情報を管理し、新規道場を作成できます。
+
+4. **トレーニング管理**
+
+   - トレーニングの記録、ログ、分析ツールを提供します。
+
+5. **イベント管理**
+
+   - イベントの作成、編集、参加者管理を行います。
+
+6. **スケジュール管理**
+
+   - 日、週、月単位でのスケジュールを表示します。
+
+7. **プロフィール管理**
+
+   - ユーザーのプロフィール情報を表示・編集します。
+
+8. **ランキング**
+
+   - グローバル、ローカル、個人のランキングを表示します。
+
+9. **レポート生成**
+
+   - 出席、パフォーマンス、財務レポートを生成します。
+
+10. **メッセージング**
+
+    - ユーザー間のメッセージング機能を提供します。
+
+11. **支払い管理**
+
+    - 会費や支払いの管理を行います。
+
+12. **技術ライブラリ**
+
+    - 武道の技術に関する情報を提供します。
+
+13. **健康管理**
+
+    - 健康状態や怪我の管理を行います。
+
+14. **目標管理**
+
+    - 目標の設定と進捗管理を行います。
+
+15. **コミュニティフォーラム**
+
+    - ユーザー間の交流を促進するフォーラム機能を提供します。
+
+16. **帯管理**
+
+    - 帯の昇級情報を管理します。
+
+17. **道場間交流**
+
+    - 他の道場との交流を促進します。
+
+18. **指導者認定**
+
+    - 指導者の認定システムを提供します。
+
+19. **武具・道具管理**
+
+    - 武具や道具の管理を行います。
+
+20. **栄養管理**
+
+    - 栄養や食事の管理を行います。
+
+21. **メディアギャラリー**
+
+    - 画像や動画のギャラリーを提供します。
+
+22. **武道理論・哲学**
+
+    - 武道に関する理論や哲学を提供します。
+
+23. **多言語サポート**
+
+    - 多言語対応を行います。
+
+24. **API**
+    - 各機能に対応するAPIを提供します。
+
+## 連絡先
+
+- プロジェクトに関する質問や提案がある場合は、GitHubのIssueを通じて連絡してください。

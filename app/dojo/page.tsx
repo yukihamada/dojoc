@@ -1,14 +1,13 @@
-
 import React from 'react';
-import Layout from '../layout';
 
-const DojoPage: React.FC = () => {
+const DojoListPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Dojo List</h2>
-      <p>Here you can find a list of all dojos.</p>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Dojo List Page">
+        Dojo List Page
+      </h1>
+    </div>
   );
 };
 
-export default DojoPage;
+export default DojoListPage;

@@ -21,7 +21,9 @@ describe('Create Event Page', () => {
     fireEvent.change(nameInput, { target: { value: 'Test Event' } });
     fireEvent.change(dateInput, { target: { value: '2023-10-01' } });
     fireEvent.change(locationInput, { target: { value: 'Tokyo' } });
-    fireEvent.change(descriptionInput, { target: { value: 'This is a test event.' } });
+    fireEvent.change(descriptionInput, {
+      target: { value: 'This is a test event.' },
+    });
 
     expect(nameInput.value).toBe('Test Event');
     expect(dateInput.value).toBe('2023-10-01');
@@ -40,7 +42,9 @@ describe('Create Event Page', () => {
     fireEvent.change(nameInput, { target: { value: 'Test Event' } });
     fireEvent.change(dateInput, { target: { value: '2023-10-01' } });
     fireEvent.change(locationInput, { target: { value: 'Tokyo' } });
-    fireEvent.change(descriptionInput, { target: { value: 'This is a test event.' } });
+    fireEvent.change(descriptionInput, {
+      target: { value: 'This is a test event.' },
+    });
     fireEvent.click(createButton);
 
     // ここでフォームの送信を確認するためのモック関数を使用することができます

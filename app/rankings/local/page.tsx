@@ -1,14 +1,11 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
-const LocalRankingsPage: React.FC = () => {
+const LocalRankingPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Local Rankings</h2>
-      <p>Here you can view the local rankings.</p>
-    </Layout>
+    <div>
+      <h1>Local Ranking Page</h1>
+    </div>
   );
 };
 
-export default LocalRankingsPage;
+export default LocalRankingPage;

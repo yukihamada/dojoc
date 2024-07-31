@@ -1,13 +1,12 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
 const TrainingLogPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Training Log</h2>
-      <p>Here you can view and manage your training logs.</p>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Training Log">
+        Training Log Page
+      </h1>
+    </div>
   );
 };
 

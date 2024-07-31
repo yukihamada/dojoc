@@ -1,18 +1,9 @@
+import '../styles/globals.css';
 
-import React from 'react';
-
-const Layout: React.FC = ({ children }) => {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-      <header>
-        <h1>DojoConnect</h1>
-      </header>
-      <main>{children}</main>
-      <footer>
-        <p>&copy; 2023 DojoConnect</p>
-      </footer>
-    </div>
+    <html lang="ja">
+      <body className="flex flex-col min-h-screen">{children}</body>
+    </html>
   );
-};
-
-export default Layout;
+}

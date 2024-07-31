@@ -1,23 +1,12 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
 const CreateDojoPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Create New Dojo</h2>
-      <form>
-        <label>
-          Dojo Name:
-          <input type="text" name="dojoName" />
-        </label>
-        <label>
-          Location:
-          <input type="text" name="location" />
-        </label>
-        <button type="submit">Create Dojo</button>
-      </form>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Create Dojo">
+        Create Dojo Page
+      </h1>
+    </div>
   );
 };
 

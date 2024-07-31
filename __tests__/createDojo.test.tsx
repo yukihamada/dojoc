@@ -18,7 +18,9 @@ describe('Create Dojo Page', () => {
 
     fireEvent.change(nameInput, { target: { value: 'Test Dojo' } });
     fireEvent.change(locationInput, { target: { value: 'Tokyo' } });
-    fireEvent.change(descriptionInput, { target: { value: 'This is a test dojo.' } });
+    fireEvent.change(descriptionInput, {
+      target: { value: 'This is a test dojo.' },
+    });
 
     expect(nameInput.value).toBe('Test Dojo');
     expect(locationInput.value).toBe('Tokyo');
@@ -34,7 +36,9 @@ describe('Create Dojo Page', () => {
 
     fireEvent.change(nameInput, { target: { value: 'Test Dojo' } });
     fireEvent.change(locationInput, { target: { value: 'Tokyo' } });
-    fireEvent.change(descriptionInput, { target: { value: 'This is a test dojo.' } });
+    fireEvent.change(descriptionInput, {
+      target: { value: 'This is a test dojo.' },
+    });
     fireEvent.click(createButton);
 
     // ここでフォームの送信を確認するためのモック関数を使用することができます

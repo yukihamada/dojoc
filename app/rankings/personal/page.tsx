@@ -1,14 +1,11 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
-const PersonalRankingsPage: React.FC = () => {
+const PersonalRankingPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Personal Rankings</h2>
-      <p>Here you can view your personal rankings and progress.</p>
-    </Layout>
+    <div>
+      <h1>Personal Ranking Page</h1>
+    </div>
   );
 };
 
-export default PersonalRankingsPage;
+export default PersonalRankingPage;

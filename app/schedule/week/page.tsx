@@ -1,14 +1,13 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
-const WeekSchedulePage: React.FC = () => {
+const ScheduleWeekPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Weekly Schedule</h2>
-      <p>Here you can view and manage your weekly schedule.</p>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Schedule for Week Page">
+        Schedule for Week
+      </h1>
+    </div>
   );
 };
 
-export default WeekSchedulePage;
+export default ScheduleWeekPage;

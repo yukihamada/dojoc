@@ -1,14 +1,13 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
-const MonthSchedulePage: React.FC = () => {
+const ScheduleMonthPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Monthly Schedule</h2>
-      <p>Here you can view and manage your monthly schedule.</p>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Schedule for Month Page">
+        Schedule for Month
+      </h1>
+    </div>
   );
 };
 
-export default MonthSchedulePage;
+export default ScheduleMonthPage;

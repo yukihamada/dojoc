@@ -1,13 +1,12 @@
-
 import React from 'react';
-import Layout from '../../layout';
 
 const TrainingAnalysisPage: React.FC = () => {
   return (
-    <Layout>
-      <h2>Training Analysis</h2>
-      <p>Here you can analyze your training performance and progress.</p>
-    </Layout>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold" aria-label="Training Analysis">
+        Training Analysis Page
+      </h1>
+    </div>
   );
 };
 
